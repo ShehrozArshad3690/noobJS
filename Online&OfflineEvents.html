@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Online&Offline</title>
+</head>
+<body>
+    <h1>JavaScript Online and Offline Events</h1>
+    <input type="text" id="output">
+    <script>
+        // var target=document.getElementById("output");
+        // window.addEventListener("offline",function () {
+        //     target.value="You are Offline";
+        // });
+        // window.addEventListener("online",function () {
+        //     target.value="You are Online";
+        // })
+
+
+        var target=document.body;
+        window.addEventListener("offline",function () {
+            target.innerHTML="You are Offline";
+        });
+        window.addEventListener("online", ()=> {
+            // target.innerHTML="You are Online";
+            window.location.reload();
+        })
+
+        // console.log(navigator.onLine);               
+    </script>
+
+</body>
+</html>

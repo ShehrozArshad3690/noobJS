@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html id="main" lang="en">
+<head>
+    <title>parentElement&Node</title>
+    <style>
+        #outer{
+            width: 1200px;
+            height: 400px;
+            margin: 0 auto;
+            background: lightsalmon;
+        }
+        #inner{
+            width: 1000px;
+            height: 200px;
+            margin: 50px auto 0;
+            background: rgb(202, 161, 212);
+            display: flex;
+            padding: 5px;
+        }
+        #a{
+            width: 100px;
+            height: 100px;
+            margin: 0 auto;
+            background: white;
+            text-align: center;
+        }
+        #b{
+            width: 100px;
+            height: 100px;
+            margin: 0 auto;
+            background: white;
+            text-align: center;
+        }
+        #c{
+            width: 100px;
+            height: 100px;
+            margin: 0 auto;
+            background: white;
+            text-align: center;
+        }
+        #d{
+            width: 100px;
+            height: 100px;
+            margin: 0 auto;
+            background: white;
+            text-align: center;
+        }
+        #e{
+            width: 100px;
+            height: 100px;
+            margin: 0 auto;
+            background: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>parentElement and parentNode DOM Traversal</h1>
+    <div id="outer">
+        <h2>Outer</h2>
+        <div id="inner">
+            <h2>Inner</h2>
+            <div id="a">A</div>
+            <div id="b">B</div>
+            <div id="c">C</div>
+            <div id="d">D</div>
+            <div id="e">E</div>
+        </div>
+    </div>
+    <script src="dom-nav.js"></script>
+</body>
+</html>

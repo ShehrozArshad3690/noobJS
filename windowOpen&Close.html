@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Open&Close</title>
+  </head>
+  <body>
+    <h1>Windows Open and Close Method</h1>
+    <input type="button" value="New" onclick="newWindow()"><br><br>
+    <input type="button" value="Close" onclick="closeWindow()">
+    <script>
+        let mywindow;
+        function newWindow() {
+            // win=window.open();              //it just opens up new empty window
+            // mywindow=window.open("https://www.google.com");             //google is opening but not closing
+            mywindow=window.open("https://www.w3schools.com");         //if we want to open any new url we can target its domain
+        }
+        function closeWindow() {
+            mywindow.close();
+        }
+    </script>
+  </body>
+</html>

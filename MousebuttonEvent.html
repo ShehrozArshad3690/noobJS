@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MouseButton</title>
+    <style>
+      #box {
+        width: 300px;
+        height: 200px;
+        background: yellow;
+        border: 1px solid black;
+        margin: 20px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Mouse Button Events</h1>
+    <div id="box"></div>
+    <script>
+      var target = document.getElementById("box");
+      // target.addEventListener("mousedown",checkButton);
+      // function checkButton(e) {
+      //     console.clear();
+      //     var check=e.button;
+      //     if (check==0) {
+      //         console.log("You pressed left button");
+      //     } else if(check==1) {
+      //         console.log("You pressed middle button");
+      //     }else{
+      //         console.log("You pressed right button");
+      //     }
+      //     // console.log("You Pressed:",check);        //it just returns us indices of left,middle and right button
+      // }
+      target.addEventListener("mousedown", function (e) {
+        var check = e.button;
+        let target2=document.getElementById("box");
+        switch (check) {
+          case 0:
+            target2.style.background="green";
+            break;
+          case 1:
+          target2.style.background="red";
+            break;
+          case 2:
+          target2.style.background="aqua";
+            break;
+          default:
+          target2.style.background="blue";
+            break;
+        }
+      });
+    </script>
+  </body>
+</html>

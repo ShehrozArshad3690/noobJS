@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>KeyProperty</title>
+    <style>
+      #box {
+        border: 1px solid blue;
+      }
+      #box2 {
+        width: 100px;
+        height: 100px;
+        background: red;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Key Property</h1>
+    <input type="text" id="input" /><br /><br />
+    <div id="box"></div>
+    <br /><br />
+    <div id="box2"></div>
+    <script>
+      var target = document.body;
+      target.addEventListener("keydown", function (e) {
+        var show = e.key;
+        document.getElementById("box").innerHTML = "You pressed:" + show;
+      });
+      var left = 0;
+      var up = 0;
+      target2 = document.getElementById("box2");
+      target.addEventListener("keydown", function (e) {
+        var check = e.key;
+        switch (check) {
+          case "ArrowRight":
+            left += 10;
+            target2.style.marginLeft = left + "px";
+            break;
+          case "ArrowLeft":
+            left -= 10;
+            target2.style.marginLeft = left + "px";
+            break;
+          case "ArrowUp":
+            up -= 10;
+            target2.style.marginTop = up + "px";
+            break;
+          case "ArrowDown":
+            up += 10;
+            target2.style.marginTop = up + "px";
+            break;
+          default:
+            console.log("invalid key press");
+            break;
+        }
+      });
+    </script>
+  </body>
+</html>

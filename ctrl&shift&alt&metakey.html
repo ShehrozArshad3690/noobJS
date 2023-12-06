@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>keys</title>
+    <style>
+      #box {
+        width: 400px;
+        height: 300px;
+        border: 1px solid black;
+        background: aqua;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Ctrl, Alt, Shift and Meta key</h1>
+    <div id="box"></div>
+    <script>
+      var taget = document.getElementById("box");
+      taget.addEventListener("click", checkKey);
+      function checkKey(e) {
+        console.clear();
+        // var check = e.altKey;
+        // // console.log(check);          //it just returns true/false
+        // if (check) {
+        //   console.log("You jave pressed the CTRL key");
+        // } else {
+        //   console.log("You haven't pressed CTRL key");
+        // }
+        var check;
+        switch (true) {
+          case e.ctrlKey:
+            check = "Ctrl Key";
+            break;
+
+          case e.shiftKey:
+            check = "Shift Key";
+            break;
+          case e.metaKey:
+            check = "Meta Key";
+            break;
+          case e.altKey:
+            check = "Alt Key";
+            break;
+          default:
+            check = "No Key pressed";
+            break;
+        }
+        console.log(check);
+      }
+    </script>
+  </body>
+</html>

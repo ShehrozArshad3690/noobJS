@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Break/Continue</title>
+  </head>
+  <body>
+    <h1>Break and Continue Statement</h1>
+    <script>
+      for (let i = 1; i < 11; i++) {
+        if (i == 5) {
+          document.write("Half<br>");
+          continue;
+        } else if (i == 8) {
+          document.write("Number: " + i + "<br>");
+          break;
+        }
+        document.write("Number: " + i + "<br>");
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Switch</title>
+  </head>
+  <body>
+    <h1>Switch Statement</h1>
+    <script>
+      var day = 8;
+      switch (day) {
+        case 0:
+          document.write("Today is Monday");
+          break;
+        case 1:
+          document.write("Today is Tuesday");
+          break;
+        case 2:
+          document.write("Today is Wednesday");
+          break;
+        case 3:
+          document.write("Today is Thursday");
+          break;
+        case 4:
+          document.write("Today is Friday");
+          break;
+        case 5:
+          document.write("Today is Saturday");
+          break;
+        case 6:
+          document.write("Today is Sunday");
+          break;
+        case 7:
+        case 8:
+        case 9:
+          document.write("today is holiday<br>");
+          document.write("Go on a vecation");
+          break;
+        default:
+          document.write("Enter the valid day");
+      }
+    </script>
+    <br>
+    <script>
+      var age = 25;
+      switch (true) {
+        case age >= 12 && age <= 22:
+          document.write("You are eligible");
+          break;
+        case age >= 23 && age <= 30:
+          document.write("You are not eligible");
+          break;
+        default:
+          document.write("Enter valid age");
+      }
+    </script>
+  </body>
+</html>

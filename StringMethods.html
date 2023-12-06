@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StringMethods</title>
+  </head>
+  <body>
+    <h1>String Methods</h1>
+    <script>
+        var test=" JavaScript is a Great is Language.";
+        document.write(test+"<br>");
+        document.write(test.length+"<br>");
+        document.write(test.toLowerCase()+"<br>");
+        document.write(test.toUpperCase()+"<br>");
+        document.write(test.includes("Great")+"<br>");
+        document.write(test.includes("ip")+"<br>");
+        document.write(test.includes("GREAT")+"<br><br>");
+        document.write(test.startsWith("J")+"<br>");
+        document.write(test.startsWith("i")+"<br>");
+        document.write(test.endsWith("t")+"<br>");
+        document.write(test.endsWith("e")+"<br><br>");
+        document.write(test.search("is")+"<br><br>");       //it gives us the index of value
+        document.write(test.search("iso")+"<br><br>");       //it gives us the -1 index because of none value find
+        document.write(test.match(/a/g)+"<br>")                 //it makes the array of founded values and we have to use double slah aroung value and g means finding value in array globally again and again
+        document.write(test.indexOf("is")+"<br>");
+        document.write(test.lastIndexOf("is")+"<br>");
+        document.write(test.replace("JavaScript","Python")+"<br>");
+        document.write(test.replace(/is/g,"or")+"<br>");
+        document.write(test.trim()+"<br>");          //use to remove extra spaces from start and end
+    </script>
+  </body>
+</html>

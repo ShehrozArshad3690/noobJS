@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flatmap</title>
+</head>
+<body>
+    <h1>Flatmap</h1>
+    <script>
+        var a=[
+            {id:1,name:"Shehroz",subjects:["Physics","Mathematics",["C++","OOP","JavaScript","Python"]]},
+            {id:2,name:"Asad",subjects:["Biology","Urdu",["C++","OOP","JavaScript","Python"]]},
+            {id:3,name:"Khalid",subjects:["Statistics","Accounts",["C++","OOP","JavaScript","Python"]]},
+            {id:4,name:"Mariyam",subjects:["Machine Learning","React",["C++","OOP","JavaScript","Python"]]}
+        ]
+        let b=a.flatMap(show);
+        function show(i) {
+            return i.subjects;
+        }
+        console.log(b);
+        let c = b.flat();
+        console.log(c);
+    </script>
+</body>
+</html>

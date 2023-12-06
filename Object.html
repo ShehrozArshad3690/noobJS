@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Objects</title>
+  </head>
+  <body>
+    <h1>Objects</h1>
+    <script>
+        var a={
+            fname:"Shehroz",
+            lname:"Arshad",
+            age:23,
+            email:"Shehrozarshad233@gmail.com",
+            movies:["Kick","Ashky","Choorian"],
+            salary:function(){
+                return 35000;
+            },
+            fullname:function () {
+                return this.fname+" "+this.lname;
+            },
+            livings:{
+                city:"Jahanian",
+                country:"Pakistan"
+            }
+        };
+        console.log(a);
+        document.write(a.fname+"<br><br>");
+        document.write(a.movies+"<br><br>");
+        document.write(a.movies[2]+"<br><br>");
+        document.write(a.salary()+"<br><br>");
+        document.write(a.fullname()+"<br><br>");
+        document.write(a.livings.city);
+    </script>
+  </body>
+</html>

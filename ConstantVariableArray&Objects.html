@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Constant Array&Objects</title>
+  </head>
+  <body>
+    <h1>Constant Variable with Array and Objects</h1>
+    <script>
+      // const a=34;
+      // a=18;
+      // document.write(a);      //gives error of constant variable
+      const test = [3, 7, 5, 9];
+      test[2] = 6;
+      // const test=[2,7,4,8];      //gives error of constant variable
+      document.write(test);
+      document.write("<br><br><br><br><br><br><br><br>");
+      const set = {
+        name: "Shehroz",
+        age: 23,
+      };
+      set.name="Saman";
+      set.age=21;
+      // set{
+      //   name:"Saman",
+      //   age:23
+      // };            //gives error of constant variable
+      document.write(set.name+" ");
+      document.write(set.age);
+    </script>
+  </body>
+</html>

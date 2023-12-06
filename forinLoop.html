@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ForInLoop</title>
+  </head>
+  <body>
+    <h1>For In Loop</h1>
+    <script>
+      var students = {
+        fname: "Shehroz",
+        lname: "Arshad",
+        age: 23,
+        email: "shehrozarshad233@gmail.com",
+      };
+      // document.write(students.email+"<br>");
+      // document.write(students.fname+"<br>");
+      // document.write(students.lname+"<br>");
+      // document.write(students.age+"<br>");
+      for (var i in students) {
+        document.write(i+":"+students[i]+"<br><br>");
+      }
+    </script>
+  </body>
+</html>

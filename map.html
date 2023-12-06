@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Map</title>
+  </head>
+  <body>
+    <h1>Map Method of Array</h1>
+    <script>
+        var a=[2,4,6,8,10];
+        document.write(a+"<br><br>");
+        function test(i) {
+            return i*2;
+        }
+        document.write(a.map(test));
+        document.write("<br><br><br><br><br><br><br><br><br>");
+        var students=[{
+            fname:"Shehroz",
+            age:23
+        },
+        {
+            fname:"Arshad",
+            age:56
+        },
+        {
+            fname:"Muzammil",
+            age:15
+        }
+    ];
+        function set(i) {
+            return i.fname + " " + i.age + " ";
+        }
+        document.write(students.map(set));
+    </script>
+  </body>
+</html>

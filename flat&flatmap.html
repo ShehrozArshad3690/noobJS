@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flat&flatmap</title>
+  </head>
+  <body>
+    <h1>Flat and Flatmap method of Arrays</h1>
+    <script>
+        var a =[1,2,3,[4,5,6],7,8,[9,0]];
+        var b=[10,20,[30,[40,50]],[[60,70,80],90],100];
+        var x=[10,20,[30,[40,50]],[[[60,70],80],90],100];
+        var c=a.flat();
+        console.log(c);
+        var d=b.flat();
+        console.log(d);
+        console.log(x.flat());
+        console.log(x.flat(2));
+        console.log(x.flat(3));
+
+
+    let employees=[
+        {id:1, name:"Shehroz", skill:["Python","C++","Javascript"]},
+        {id:2, name:"Bilal", skill:["Finance","Accounting"]},
+        {id:3, name:"Usama", skill:["Angular","React"]}
+    ]
+    let skills=employees.map(print);
+    function print(i) {
+        return i.skill;
+    }
+    let allSkills=skills.flat();
+    console.log(allSkills);
+    let skills2=employees.flatMap(test);
+    function test(elem) {
+        return elem.skill;
+    }
+    console.log(allSkills);
+    </script>
+  </body>
+</html>

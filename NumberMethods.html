@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NumberMethods</title>
+  </head>
+  <body>
+    <h1>Number Methods</h1>
+    <script>
+        var a ="99.2";
+        var b=true;
+        document.write(Number(a)+1+"<br>");        //it converts string value to integer value
+        document.write(Number(b)+"<br>");           //it converts the true value of boolean to integer value of 1
+        document.write(parseInt(a)+"<br>");         //it parses the integer value()
+        document.write(parseFloat(a)+"<br>");       //it parses the float value (99.00)
+        var c=100;
+        var d=9/0;
+        document.write(Number.isFinite(c)+"<br>");         //checks if the number is finite or not (true/false)
+        document.write(Number.isFinite(d)+"<br>");         //checks if the number is finite or not (true/false)
+        document.write(Number.isInteger(c)+"<br>");         //checks if the number is finite or not (true/false)
+        document.write(Number.isInteger(a)+"<br>");         //checks if the number is finite or not (true/false)
+        var f=4.38945;
+        document.write(f.toFixed(3)+"<br>");                //to get value to a fix numbers after the decimal in float value
+        document.write(f.toPrecision(2));                   //it gives us round about value of float number
+
+    </script>
+  </body>
+</html>

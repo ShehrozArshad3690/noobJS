@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Console</title>
+</head>
+<body>
+    <h1 id="main">Google Console</h1>
+    <p>Demonstrate the console</p>
+    <script>
+        var s=50;
+        console.time('Test');
+        console.log(s);
+        console.log(s+90);
+        console.log([1,2,3]);
+        console.table([90,30,50]);
+        console.error('Something went wrong');
+        console.warn("this is just a warning");
+        console.timeEnd('Test');
+        //console.clear();            //to clear console log output screen
+    </script>
+</body>
+</html>

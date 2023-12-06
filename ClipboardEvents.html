@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ClipboardEvents</title>
+  </head>
+  <body>
+    <h1>Clipboard Events</h1>
+    <input type="text" id="input1" placeholder="Test Here">
+    <br><br>
+    <input type="text" id="input2" placeholder="Input Here">
+    <script>
+        var target=document.getElementById("input1");
+        var target2=document.getElementById("input2");
+        target.addEventListener("copy",function(){
+            console.log("Text is copied");
+            target.style.background="orange";
+        });
+        target.addEventListener("cut",function () {
+            console.log("Text is Cut");
+            target.style.background="red";
+        });
+        target2.addEventListener("paste",function () {
+            console.log("Text is pasted")
+            target2.style.background="green";
+        })
+    </script>
+  </body>
+</html>

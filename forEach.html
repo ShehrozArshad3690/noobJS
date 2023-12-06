@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ForEach</title>
+  </head>
+  <body>
+    <h1>forEach Method of Array</h1>
+    <script>
+        document.write("For printing just values with loop<br><br>");
+        var a=["Farhat","Arish","Muntaha","Shehroz"];
+        a.forEach(function (value) {
+            document.write(value+"<br>");
+        });
+        document.write("<br>For printing the indexes of values with loop with external function<br><br>");
+        function loop(value,index){
+            document.write(index+":"+value+"<br>")
+        }
+        a.forEach(loop);
+    </script>
+  </body>
+</html>

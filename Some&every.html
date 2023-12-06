@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Some&Every</title>
+  </head>
+  <body>
+    <h1>Some and Every Method of Array</h1>
+    <script>
+      document.write("Example of Some Method<br><br>");
+      var ages = [22, 15, 13, 29, 27];
+      document.write(ages + "<br><br>");
+      function check(a) {
+        return a>=20;       //like OR condition means if any of one condition is true then it returns true
+        // return a>=15;
+      }
+      document.write(ages.some(check));
+      document.write("<br><br>")
+      document.write("Example of Every Method<br><br>");
+      var a =[19,24,12,23,28,35];
+      document.write(a+"<br><br>");
+      function chk(a){
+        return a>=18;       //like AND condition means if all of the conditions is true then it returns true
+        // return a>=10;
+      }
+      document.write(a.every(chk));
+    </script>
+  </body>
+</html>

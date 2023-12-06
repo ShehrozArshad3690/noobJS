@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StringsMethods</title>
+  </head>
+  <body>
+    <h1>String Methods 2</h1>
+    <script>
+        var str="JavaScript is a Great Language"
+        var str2=" Hurrah"
+        var str3=" :)"
+        var tst=14;
+        var paf=str.valueOf();
+        document.write(str.charAt(6)+"<br>");           //it gives us the character that is on the given index value
+        document.write(str.charCodeAt(9)+"<br>");        //it gives us the asci code of character with given value of index w.r.t string
+        document.write(str.charCodeAt(12)+"<br>");        //it gives us the asci code of character with given value of index w.r.t string
+        document.write(String.fromCharCode(65)+"<br>");             //it gives us the character that is on that asci code 4 on the keyboard
+        document.write(str.concat(str2,str3)+"<br>");            //joining two or more strings
+        document.write(str.split(" ")+"<br>");           //splits a string into array on the behalf of some character or string
+        document.write(str.split("i")+"<br>");           //splits a string into array on the behalf of some character or string
+        document.write(str2.repeat(5)+"<br>");          //prints the given string on number of times
+        document.write(str.slice(0,9)+"<br>");          //like slice of array
+        document.write(str.slice(-8,-1)+"<br>");          //like slice of array
+        document.write(str2.substr(2,2)+"<br>");               //first parameter for starting index and second parameter for how many characters will be retured
+        document.write(str.substring(4,10)+"<br>")
+        document.write(tst.toString()+3+"<br>");
+        document.write(paf);
+    </script>
+  </body>
+</html>
